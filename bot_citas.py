@@ -1,19 +1,18 @@
-from telegram import Update
-   from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
    # Token de tu bot (obtenido de BotFather)
-   TOKEN = "7524999845:AAG9hPdc3Mnu42IpdgDk4NMFUqCJxtZA4lo"
+   TOKEN = "TU_TOKEN_AQUÍ"
 
    # Comando /start
-   def start(update: Update, context: CallbackContext):
+   def start(update, context):
        update.message.reply_text("¡Hola! Soy tu gestor de citas. Usa /agendar para programar una cita.")
 
    # Comando /agendar
-   def agendar(update: Update, context: CallbackContext):
+   def agendar(update, context):
        update.message.reply_text("Por favor, escribe la fecha y hora de tu cita (por ejemplo: 27/02/2025 15:00).")
 
    # Manejar mensajes de texto
-   def manejar_mensaje(update: Update, context: CallbackContext):
+   def manejar_mensaje(update, context):
        texto = update.message.text
        update.message.reply_text(f"Cita agendada: {texto}. ¡Gracias!")
 
