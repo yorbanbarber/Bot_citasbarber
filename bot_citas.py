@@ -1,7 +1,7 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
    # Token de tu bot (obtenido de BotFather)
-   TOKEN = "TU_TOKEN_AQUÍ"
+   TOKEN = "7524999845:AAG9hPdc3Mnu42IpdgDk4NMFUqCJxtZA4lo"
 
    # Comando /start
    def start(update, context):
